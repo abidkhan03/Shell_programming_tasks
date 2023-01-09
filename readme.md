@@ -2,11 +2,13 @@
 
 ## Task 1
 
-write a shell script to search a file in a give folder
-~$ ./task1.sh <search_file> <folder>
+write a shell script to search a file in a give folder \
+```~$ ./task1.sh <search_file> <folder>```
 
 for example
-```folder ~$ ./task1.sh test.txt /home/username```
+
+```~$ ./task1.sh test.txt /home/username```
+
 should output searching every single occurence of test.tx by using depth first search
 
 ## Task 2
@@ -21,35 +23,48 @@ Write a utility script to follow a deployment pipeline
 
 ## Task 3
 
-ifconfig gives you your system network information. Parse out your local IP (192.168.xxx.xxx) address and display it
+```ifconfig``` gives you your system network information. Parse out your local IP (192.168.xxx.xxx) address and display it
 only.
-$ ./whats_my_ip.sh
+
+```$ ./whats_my_ip.sh```
 Example output
+
 192.168.18.2
+
 
 ## Task 4
 
 Modify your PS1 and make it look like
-  [15:52:13] ~ >
-Where [15:52:13] is timestamp, ~ is your present working directory.
+
+```  [15:52:13] ~ >``` \
+Where [15:52:13] is timestamp, ~ is your present working directory. 
+
 Put this in ~/.dotfile and execute this dot file safely (only if present) through ~/.bashrc
+
 
 ## Task 5
 
 Box print a string through script
-$ ./box_print.sh THIS STRING
+
+```$ ./box_print.sh THIS STRING``` \
 Should print
+```
 ***************
 * THIS STRING *
 ***************
+```
+
 
 ## Task 6
 
 In last task (Task 5), pass arguments (through flags), like
-$ ./box_print.sh -s "THIS STRING" -c "+"
+
+```$ ./box_print.sh -s "THIS STRING" -c "+"``` \
 The above example prints it
+```
 +++++++++++++++
 + THIS STRING +
 +++++++++++++++
+```
 Passing nothing as a character (no -c ) will only print the string
 THIS STRING
