@@ -9,6 +9,8 @@
 
 for file in $(find $2 -type f -name $1); do
     echo | cat $file
+    echo "-----------------"
+    echo "file found: $file"
 
 done
 
