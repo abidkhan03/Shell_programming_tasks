@@ -1,70 +1,78 @@
 # Shell Programming Tasks
 
-## Task 1
+### Description
+Six shell programming tasks are written in scripts folder of this repository. Each task is a shell script. You can run the script by using ```./script_name.sh``` command. Each script has a description of what it does. You can also run the script with ```-h``` flag to get the description of the script.
 
-write a shell script to search a file in a give folder \
-```~$ ./task1.sh <search_file> <folder>```
+### Prerequisites
+You need to have bash shell installed on your system. You can check if you have bash shell installed by running ```bash --version``` command. If you don't have bash shell installed, you can install it by running ```sudo apt install bash``` command.
 
-for example
+### How to run the scripts
+#### Task 1
+To run the script for task 1, you need to pass two arguments to the script. The first argument is the file name that you want to search and the second argument is the folder name in which you want to search the file. You can run the script by using the following command.
 
-```~$ ./task1.sh test.txt /home/username```
+```bash task1.sh <file_name> <folder_name>```
 
-should output searching every single occurence of test.tx by using depth first search
+For example, if you want to search for a file named ```test.txt``` in the folder ```/home/username```, you can run the script by using the following command.
 
-## Task 2
+```bash task1.sh test.txt /home/username```
 
-Write a utility script to follow a deployment pipeline
-1. First it should create three files in task2/ folder created earlier in present working directory
-2. Create three files using touch command inside the task2/ folder
-3. Copy the files and paste into another created folder named task2_temp/
-4. Swap both folder names
-5. echo before each step what is happening in the next line
-6. Make this script task2.sh executable
+or 
 
-## Task 3
+```$ ./task1.sh test.txt /home/username```
 
-```ifconfig``` gives you your system network information. Parse out your local IP (192.168.xxx.xxx) address and display it
-only.
+in Linux, you can also use ```~``` to represent the home directory. So, you can also run the script by using the following command.
 
-```$ ./whats_my_ip.sh```
-Example output
+```bash task1.sh test.txt ~/```
 
-192.168.18.2
+or
+
+```$ ./task1.sh test.txt ~/```
+
+#### Task 2
+To run the script for task 2, you need to run the following command.
+
+```bash task2.sh```
+
+or
+
+```$ ./task2.sh```
+
+#### Task 3
+To run the script for task 3, you need to run the following command.
+
+```bash task3.sh```
+
+or
+
+```$ ./task3.sh```
+
+#### Task 4
+To run the script for task 4, you need to run the following command.
+
+```bash task4.sh```
+
+or
+
+```$ ./task4.sh```
+
+#### Task 5
+To run the script for task 5, you need to pass one argument to the script. The argument is the string that you want to box print. You can run the script by using the following command.
+
+```bash task5.sh "THIS STRING"```
+
+or
+
+```$ ./task5.sh "THIS STRING"```
 
 
-## Task 4
+#### Task 6
+To run the script for task 6, you need to pass two arguments to the script. The first argument is the string that you want to box print and the second argument is the character that you want to use to box print the string. You can run the script by using the following command.
 
-Modify your PS1 and make it look like
+```bash task6.sh "THIS STRING" "+"```
 
-```  [15:52:13] ~ >``` \
-Where [15:52:13] is timestamp, ~ is your present working directory. 
+or
 
-Put this in ~/.dotfile and execute this dot file safely (only if present) through ~/.bashrc
+```$ ./task6.sh "THIS STRING" "+"```
 
-
-## Task 5
-
-Box print a string through script
-
-```$ ./box_print.sh THIS STRING``` \
-Should print
-```
-***************
-* THIS STRING *
-***************
-```
-
-
-## Task 6
-
-In last task (Task 5), pass arguments (through flags), like
-
-```$ ./box_print.sh -s "THIS STRING" -c "+"``` \
-The above example prints it
-```
-+++++++++++++++
-+ THIS STRING +
-+++++++++++++++
-```
-Passing nothing as a character (no -c ) will only print the string
-THIS STRING
+### Author
+[Abdullah Abid Khan](
