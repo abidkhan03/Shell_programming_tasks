@@ -8,9 +8,17 @@
 # should output searching every single occurence of test.tx by using depth first search
 
 for file in $(find $2 -type f -name $1); do
-    echo | cat $file
-    echo "-----------------"
-    echo "file found: $file"
+    if [ -f $file ]; then
+        echo "-----------------"
+        echo "file found: $file"
+        echo "-----------------"
+        echo "file content:"
+        echo "-----------------"
+        cat $file
+        echo
+    else
+        echo "file not found"
+    fi
 
 done
 
