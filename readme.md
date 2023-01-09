@@ -16,11 +16,11 @@ To run the script for task 1, you need to pass two arguments to the script. The 
 
 For example, if you want to search for a file named ```test.txt``` in the folder ```/home/username```, you can run the script by using the following command.
 
-```bash task1.sh test.txt /home/username```
+```./scripts/task1.sh test.txt ~/projects/Shell_programming_tasks/search_files```
 
 or 
 
-```$ ./task1.sh test.txt /home/username```
+```$ ./task1.sh test.txt /home/username/Desktop```
 
 in Linux, you can also use ```~``` to represent the home directory. So, you can also run the script by using the following command.
 
